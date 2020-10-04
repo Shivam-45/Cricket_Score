@@ -28,7 +28,7 @@ def takeChoice(parsed):
 	print "List of ongoing matches"
 	for index in range(len(parsed)):
 		print str(index+1)+". "+parsed[index]['t1']+" vs "+parsed[index]['t2']  
-	option = input("Enter the choice : ")
+	option = input("Enter your choice : ")
 	return option
 
 
@@ -47,7 +47,7 @@ if(choice>=1 and choice<=len(parsed)):
 		interface.Notify(score[0]+'\n'+score[1],id,'',de,score[0]+'\n'+score[1],'','',timeout)#Display Notification
 		sleep(60)#Thread sleep
 else: 
-	print("Sorry incorrect option. Try again\n")
+	print("Sorry Wrong option, Try again\n")
 	takeChoice(parsed)	#Re-ask for choice
 	
 	
